@@ -6,4 +6,5 @@ public class Project
     public string Categorie { get; set; }
     public string GitHubUrl { get; set; }
     public DateTime Datum { get; set; }
-}
+} 
+
