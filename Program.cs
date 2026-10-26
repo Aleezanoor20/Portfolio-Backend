@@ -8,7 +8,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<PortfolioDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<ProjectService>();
+builder.Services.AddScoped<BlogpostService>(); 
+
+
 var app = builder.Build();
 
 // Swagger
